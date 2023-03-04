@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css" integrity="sha384-QYIZto+st3yW+o8+5OHfT6S482Zsvz2WfOzpFSXMF9zqeLcFV0/wlZpMtyFcZALm" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+     body{
+      margin: 0;
+      padding: 0;
+      background-color:white;
+      background: url("https://img.wallpapersafari.com/desktop/728/410/98/9/taX76M.jpg");
+     } 
+     header{
+      width: 100%;
+      height: 100vh;
+     font-family: sans-serif;
+    }
+     nav{
+      width: 100%;
+      height: 50px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      background-color:#11a372;
+    }
+    .logo{
+      font-size: 2em;
+      letter-spacing: 1px;
+      color:#fff;
+      font-style: oblique;
+      margin-right: 40%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      text-transform: uppercase;
+    }
+    .logo:hover{
+      color: #333;
+    }
+    .menu a{
+      color: #fff;
+      padding: 10px 10px;
+      font-size: 20px;
+      text-decoration: none;
+     }
+     .menu a:hover{
+      color: #333;
+     }
+     .hire{
+      font-size: xx-large;
+      color:#fff;
+      background-color:#11a372;
+      
+     }
+     .container{
+      text-align: left;
+      margin-right: 50%;
+      padding-left: 206px;
+      margin-top: 10%;
+      float: left;
+      font-size:x-large;
+      font-family: sans-serif;
+      font-weight: 100;
+      
+     }
+     .photo{
+    width: 400px;
+    height: 500px;
+    border-radius: 50%;
+    float: right;
+    margin-left: 40%;
+    position: relative;
+     bottom: 400px;
+     margin-right: 206px;
+     border: 5px solid white;
+     }
+     .about{
+      width: 100%;
+      height: 250px;
+      position: relative;
+      left: 50px;
+      width: 1350px;
+     }
+     .about h1{
+      font-size: xx-large;
+      font-weight: 500;
+      font-style: italic;
+      text-transform: uppercase;
+      color: #11a372;
+      position: relative;
+      left: 650px;
+      text-transform: uppercase;
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    
+     }
+     .about h1:hover{
+      color: #fff;
+     }
+     .skills{
+      position: relative;
+      bottom: 200px;
+     }
+    
+     .skills h1{
+      font-weight: 500;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       color:  #11a372;
+       font-style: italic;
+       text-align: center;
+       margin-right: 150px;
+       font-size: xx-large;
+       text-transform: uppercase;
+     }
+     .skills h1:hover{
+      color: #fff;
+     }
+     .img1{
+    height: 10%;
+    width: 10%;
+    border-radius: 50%;
+    margin-left: 5%;
+
+     }
+     .img1:hover{
+      width: 15%;
+      height: 15%;
+     }
+     .img2{
+      height: 10%;
+    width: 10%;
+    border-radius: 50%;
+    margin-left: 5%;
+     }
+     .img2:hover{
+      width: 15%;
+      height: 15%;
+     }
+     .img3{
+      height: 10%;
+    width: 10%;
+    border-radius: 50%;
+    margin-left: 5%;
+     }
+     .img3:hover{
+      width: 15%;
+      height: 15%;
+     }
+     .img4{
+      height: 10%;
+    width: 10%;
+    border-radius: 50%;
+    margin-left: 5%;
+     }
+     .img4:hover{
+      width: 15%;
+      height: 15%;
+     }
+     .img5{
+      height: 10%;
+    width: 10%;
+    border-radius: 50%;
+    margin-left: 5%;
+     }
+     .img5:hover{
+      width: 15%;
+      height: 15%;
+     }
+     .img6{
+      height: 10%;
+    width: 10%;
+    border-radius: 50%;
+    margin-left: 5%;
+     }
+     .img6:hover{
+      width: 15%;
+      height: 15%;
+     }
+     .certificates{
+      position: relative;
+      bottom: 200px;
+     }
+     .certificates h1{
+      text-align: center;
+      font-size: xx-large;
+      font-weight: 500;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       color:#11a372;
+       font-style: italic;
+       text-transform: uppercase;
+
+     }
+     .certificates h1:hover{
+      color: #fff;
+     }
+     .img7{
+      height: 20%;
+    width: 20%;
+    margin-left: 6%;
+    outline: double;
+    outline-color: #fff;
+     }
+     .img7:hover{
+      width: 15%;
+      height: 15%;
+     }
+     
+     .img8{
+      height: 20%;
+    width: 20%;
+    margin-left: 2%;
+    outline: double;
+    outline-color: #fff;
+     }
+     .img8:hover{
+      width: 15%;
+      height: 15%;
+     }
+     
+     .img9{
+      height: 20%;
+    width: 20%;
+    margin-left: 2%;
+    outline: double;
+    outline-color: #fff;
+     }
+     .img9:hover{
+      width: 15%;
+      height: 15%;
+     }
+     .img10{
+      height: 20%;
+    width: 20%;
+    margin-left: 2%;
+    outline: double;
+    outline-color: #fff;
+     }
+     .img10:hover{
+      width: 15%;
+      height: 15%;
+     }
+     .contact{
+      margin-left: 5%;
+      
+     }
+     .content{
+      text-align: center;
+      font-size: xx-large;
+      font-weight: 100;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       color: blue;
+       font-style: italic;
+     }
+     .education{
+      font-weight: 500;
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+       color:  #11a372;
+       font-style: italic;
+       text-align: center;
+       margin-right: 650px;
+       font-size: xx-large;
+     }
+     .contact{
+      position: relative;
+      min-height: 100vh;
+      padding: 50px 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      bottom: 300px;
+      color: #11a372;
+    
+     }
+     .contact .content{
+      max-width: 800px;
+      text-align: center;
+     }
+     .contact .content h2{
+      font-size: 36px;
+      font-weight: 500;
+      color:#11a372;
+     }
+     .contact .content h2:hover{
+      color: #fff;
+     }
+     .contact .content h5{
+      font-weight: 300;
+      color:#11a372;
+     }
+     .containerr{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 30px;
+     }
+     .containerr .contactinfo{
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+     }
+      .containerr .contactinfo .box{
+        position: relative;
+        padding: 20px 0;
+        display: flex;
+      }
+      .containerr .contactinfo .box .icon{
+        min-width: 60px;
+        height: 60px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        font-size: 22px;
+            }
+            .containerr .contactinfo .box .text{
+              display: flex;
+              margin-left: 20px;
+              font-size: 16px;
+              color:#fff;
+              flex-direction: column;
+              font-weight: 300;
+            }
+            .containerr .contactinfo .box .text h3{
+              font-weight: 500;
+              color: #11a372;
+              font-size: x-large;
+            }
+            .contactform{
+              width: 40%;
+              padding: 40px;
+              background:#333;
+
+            }
+            .contactform h2{
+              font-size: 30px;
+              color: #fff;
+              font-weight: 500;
+            }
+            .contactform .inputbox{
+              position: relative;
+              width: 100%;
+              margin-top: 10px;
+            }
+            .contactform .inputbox input,.contactform .inputbox textarea{
+              width: 100%;
+              padding: 5px 0;
+              font-size: 16px;
+              margin: 10px 0;
+              border: none;
+              border-bottom: 2px solid #fff;
+              outline: none;
+              resize: none;
+            }
+            .contactform .inputbox span{
+              position: absolute;
+              left: 0;
+              padding: 5px 0;
+              font-size: 16px;
+              margin: 10px 0;
+              pointer-events: none;
+              transition: 0.5s;
+              color: #666;
+            }
+            .contactform .inputbox input:focus ~ span,
+            .contactform .inputbox input:valid ~ span,
+            .contactform .inputbox textarea:focus ~ span,
+            .contactform .inputbox textarea:valid ~ span
+            {
+            color: #e91e63;
+            font-size: 12px;
+            transform: translate(-100px);
+          }
+          .contactform .inputbox input[type="submit"]
+          {
+            width: 100px;
+            background-color: #11a372;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            font-size: 18px;
+          }
+            @media (max-width:991px){
+              .contact{
+                padding: 50px;
+              }
+              .containerrr{
+                flex-direction: column;
+              }
+              .containerrr .contactinfo{
+                margin-bottom: 40px;
+              }
+              .containerrr .contactinfo{
+                width: 100%;
+              }
+
+            }
+            .containerrr{
+              width: 100%;
+              padding: 35px;
+              position: relative;
+              bottom: 200px;
+      
+            }
+            main .row{
+              display: grid;
+              grid-template-columns: 1fr 1fr;
+              grid-column-gap: 10px;
+            }
+            .col header .title{
+              font-family: helvetica;
+              color: #11a372;
+              padding: 0px 0px 20px 30px;
+            }
+            .col .contents{
+              padding: 0px 30px;
+              border-left: 2px solid #bababa;
+            }
+            .col .contents .boxes{
+              position: relative;
+              padding: 20px;
+              border: 1px solid #eaeaea;
+              cursor:pointer;
+              transition: all 0.4s;
+              margin-bottom: 20px;
+            }
+            .col .contents .boxes:hover{
+              box-shadow:0px 3px 12px 0px #ccc ;
+              border:1px solid transparent;
+            }
+            .col .contents .boxes::before{
+              content:'';
+              position: absolute;
+              width: 16px;
+              height: 16px;
+              border-radius: 50%;
+              right: calc(50%+22px);
+              top: 0;
+              background-color: #11a372;
+              border:2px solid white;
+            }
+            .boxes h4{
+              position: relative;
+              color: #11a372;
+            }
+            .boxes h3{
+              font-size: 19px;
+              padding: 10px 0px 6px;
+              font-family: Arial, Helvetica, sans-serif;
+              color: #fff;
+
+            }
+            .boxes p{
+              line-height: 1.2;
+              color: #fff;
+              font-size: 17px;
+            }
+            .title h1{
+              text-align: center;
+             font-size: xx-large;
+             font-weight: 100;
+              font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+              color: #11a372;
+              font-style: italic;
+              text-transform: uppercase;
+            }
+            .title h1:hover{
+              color: #fff;
+            }
+           footer{
+            position: relative;
+            width: 100%;
+            background: #11a372;
+            min-height: 100px;
+            padding: 30px 50px ;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+           }
+           footer .social_icon{
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin:10px 0;
+            flex-wrap: wrap;
+           } 
+           footer .social_icon li{
+            list-style: none;
+           }
+             footer .social_icon li a{
+            font-size: 2em;
+            color: #fff;
+            margin: 0 10px;
+            display: inline-block;
+            transition: 0.5s;
+
+             }
+             footer .social_icon li a:hover{
+              transform: translateY(-10px);
+             }
+             footer .menu li a{
+              font-size: 2em;
+              color: #fff;
+              margin: 0 10px;
+              display: inline-block;
+              transition: 0.5s;
+              text-decoration: none;
+              opacity: 0.75;
+             }
+             footer .menu li a:hover{
+              opacity: 1;
+             }
+             footer p{
+              color: #fff;
+              text-align: center;
+              margin-top: 15px;
+              font-size: 1.1em;
+             }
+    </style>
+</head>
+<body>
+
+
+  <header>
+  <nav>
+    <div class="logo">
+     Smita's Portfolio
+    </div>
+    <div class="menu">
+      <a href="#">Home</a>
+      <a href="#">About me</a>
+      <a href="#">Skills</a>
+      <a href="#">Certificates</a>
+      <a href="#">Contact</a>
+    </div>
+   </nav>
+   <div class="main">
+   <div class="container">
+    <h4 style="color: #fff;">Hello,it's me</h4>
+    <h1 style="color: #fff;font-style: italic;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Smita Mohanty</h1>
+    <h2 style="color:#fff;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">and i am a <em style="color: #11a372">frontend developer!</em></h2>
+    <br>
+    <button class="hire">Resume</button>
+   </div>
+   <div class="images">
+    <img src="C:\Users\Smita Mohanty\Desktop\IMG_0255.jpg" class="photo">
+   </div>
+   </div>
+  </header> 
+
+
+  <section class="about">
+    <h1>About me</h1>
+  </section>
+  <br>
+  <p style="position: relative;left: 250px;bottom: 200px;width:930px;font-size:x-large;outline: double;color: #fff;"><br>I'm currently pursuing computer science engineering at the Institute of Technical Education and Research, looking for opportunities to grow, expand and strengthen my skills.I enjoy taking complex problems and turning then into simple and beautiful interface designs.I also love the logic and structure of coding and always strive to write elegant and efficient code.Whether it be <span style="color: #11a372">HTML,CSS,JQUERY.</span>I am excited to continue developing my skills and gaining valuable experiences as an intern at oasis.Please visit my page to know more about me.And if you are interested in reaching out to
+  me,i'd love to connect.<br><br>Email:smitamohanty751@gmail.com<br><br>place:Orissa<br><br>Thank you for taking the time to visit my website!<br><br></p>
+
+
+
+  <div class="containerrr">
+    <main class="row">
+  <section class="col">
+    <section class="title">
+    <h1>Education</h1>
+    </section>
+    <div class="contents">
+      <div class="boxes">
+        <h4 style="font-size: large;">2008-2018</h4>
+        <h3 style="font-size: large;">10th</h3>
+        <p style="font-size: x-large;">Kendriya vidyalaya balasore</p>
+      </div>
+      <div class="boxes">
+        <h4 style="font-size: large;">2018-2020</h4>
+        <h3 style="font-size: large;">12th</h3>
+        <p style="font-size: x-large;">kendriya vidyalaya</p>
+      </div>
+      <div class="boxes">
+        <h4 style="font-size: large;">2020-2024</h4>
+        <h3 style="font-size: large;">Bachelor's degree</h3>
+        <p style="font-size: x-large;">Institute of technology education and research</p>
+      </div>
+     </div>
+  </section>
+  </main>
+  </div>
+  <br>
+  <br>
+
+
+
+    <section class="skills">
+    <h1><strong>Skills</strong></h1>
+    <img src="https://th.bing.com/th/id/R.9236a13d8e3c00729d652ef647430b47?rik=UphO4Y5OBDMbbg&riu=http%3a%2f%2f3.bp.blogspot.com%2f-enXse4F7t94%2fU5hpR5fivsI%2fAAAAAAAABl8%2fn6Pc81-GYno%2fs1600%2fJava%2blogo%2bgood.png&ehk=mTsWtaZSpz8nW2J76SjPEy9K%2b1IR7VZ9UTazi%2bNGqMU%3d&risl=&pid=ImgRaw&r=0" class="img1">
+    <img src="https://1000logos.net/wp-content/uploads/2020/09/CSS-Logo.png" class="img2">
+    <img src="https://th.bing.com/th/id/OIP.ot7tWiPCYC01pV0kGmK3qQHaE8?pid=ImgDet&rs=1" class="img3">
+    <img src="https://th.bing.com/th/id/OIP.tmWtQr0CuaNw13CHQ4P6OAHaHa?pid=ImgDet&rs=1" class="img4">
+    <img src="https://www.onlinecasinos.org.uk/images/CASINO/Articles/html5-logo.png" class="img5">
+    <img src="https://www.dynamisers.com/wp-content/uploads/2020/01/development-technology-dynamisers_python.jpg" class="img6">
+  </section>
+
+  <br>
+  <br>
+
+
+  <section class="certificates">
+    <h1>certificates</h1>
+    <img src="E:\certificates\Screenshot (9).jpg" class="img7">
+    <img src="E:\certificates\Screenshot (6).jpg" class="img8">
+    <img src="E:\certificates\Screenshot (7).jpg" class="img9">
+    <img src="E:\certificates\Screenshot (8).jpg" class="img10">
+  </section>
+
+  <br>
+  <br>
+
+
+  <section class="contact">
+    <div class="content">
+      <h2>Contact Me</h2>
+      </div>
+   <div class="containerr">
+    <div class="contactinfo">
+      <div class="box">
+        <div class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i>
+        </div>
+        <div class="text">
+          <h3>Address</h3>
+          <h5>Qr no-212/4 proof colony balasore</h5>
+        </div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fa fa-envelope" aria-hidden="true"></i>
+        </div>
+        <div class="text">
+          <h3>Email</h3>
+          <h5>smitamohanty751@gmail.com</h5>
+        </div>
+      </div>
+      <div class="box">
+        <div class="icon"><i class="fa fa-phone-square" aria-hidden="true"></i>
+        </div>
+        <div class="text">
+          <h3>Phone Number</h3>
+          <h5>7894561230</h5>
+        </div>
+      </div>
+    </div>
+    <div class="contactform">
+      <form>
+        <h2>Send Message</h2>
+        <div class="inputbox"> 
+          <input type="text" name="" required="required">
+          <span>Full Name</span>
+        </div>
+        <div class="inputbox"> 
+          <input type="text" name="" required="required">
+          <span>Email</span>
+        </div>
+        <div class="inputbox"> 
+          <textarea required="required"></textarea>
+          <span>Type your message</span>
+        </div>
+        <div class="inputbox">
+          <input type="submit" name="" value="send">
+        </div>
+      </form>
+    </div>
+   </div>
+  </section>
+  <br>
+
+  <footer>
+    <div class="thanks">
+     <span style="font-size: large;color: #fff;">Thank you for taking the time to visit my website.
+      Have a great day!</span>
+    </div>
+    <br>
+    <ul class="social_icon">
+      <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+      <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+      <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+    </ul>
+    <p>@Designed by Smita Mohanty</p>
+  </footer>
+</body>
+</html>
